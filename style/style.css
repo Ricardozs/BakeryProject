@@ -1,0 +1,148 @@
+/*===GridView===*/
+* {
+  box-sizing: inherit;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+  border: 1px solid red;
+}
+/*===Body===*/
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*===MainContainer===*/
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/*===Header===*/
+.header {
+  height: 165px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #373536;
+}
+/*===Logo===*/
+.logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  height: 100%;
+  width: 487px;
+}
+/*===SocialMedia*/
+.social-media {
+  display: flex;
+  flex-direction: column;
+}
+.social-media a {
+  color: white;
+}
+/*===Navbar===*/
+.navbar {
+  width: 100%;
+  position: fixed;
+  background-color: #585555;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 165px;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.2), 0 3px 25px 0 rgba(0, 0, 0, 0.19);
+  font-size: 16px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  text-decoration-line: none;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  background-color: #676565;
+}
+
+.active{
+  background-color: #676565;
+}
+
+.navbar a span {
+  padding: 10px;
+}
+
+.content-container {
+  height: 100%;
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.overflow{
+  overflow-y: scroll;
+}
+
+.footer {
+  height: 50px;
+  background-color: #585555;
+  bottom: 0;
+  width: 100%;
+}
