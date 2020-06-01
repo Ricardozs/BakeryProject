@@ -4,6 +4,8 @@ $(document).ready(function () {
     goToDiv(this.id);
   });
   navbarScroll();
+  mobileVersion();
+  $(window).resize(mobileVersion);
 });
 
 function navbarScroll(){
@@ -41,4 +43,23 @@ function goToDiv(id) {
     },
     "slow"
   );
+}
+
+function mobileVersion(){
+  if($(window).width() <= 996){
+    $('.navbar').css(
+      'display', 'none'
+    );
+    $('.mobile-navbar').css(
+      'display', 'flex'
+    );
+  }
+  else{
+    $('.navbar').css(
+      'display', 'flex'
+    );
+    $('.mobile-navbar').css(
+      'display', 'none'
+    );
+  }
 }

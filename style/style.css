@@ -137,6 +137,7 @@ body {
   font-family: "Comic Sans MS", cursive, sans-serif;
   overflow-y: scroll;
   overflow-x: hidden;
+  transition: margin 0.5s;
 }
 /*===Carousel===*/
 .carousel-container {
@@ -164,6 +165,30 @@ body {
   opacity: 0;
   animation: display3 10s infinite;
   animation-delay: 6s;
+}
+
+/*===Contact===*/
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-information {
+  color: white;
+  justify-content: center;
+  height: 82px;
+  width: 294px;
+  align-items: center;
+  padding: 20px;
+  text-align: justify;
+  background-image: url("C:\\Users\\ricar\\Documents\\BakeryProject\\img\\bg.jpg");
+  background-size: cover;
+}
+
+.contact-information a {
+  color: white;
 }
 
 /*===Footer===*/
@@ -239,5 +264,22 @@ body {
   100% {
     transform: translateX(-1300px);
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .mobile-navbar {
+    display: flex;
+    background: #373536;
+    height: 105px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-icon {
+    position: absolute;
+  }
+  .mobile-navbar .menu-icon i {
+    color: white;
   }
 }

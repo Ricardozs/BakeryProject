@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+}
+/*===MainContainer===*/
+.principal-container {
+  width: 100%;
+  height: 100vh;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/*===NavigationContainer===*/
+.navigation-container {
+  width: 22%;
+  height: 100%;
+  background: #373536;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*===Logo===*/
+.logo-container{
+    height: 25%;
+    width: 100%;
+}
+.logo-container img{
+    width: 100%;
+    height: 100%;
+}
+/*===SocialMedia===*/
+.social-media-container{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.social-media-container a {
+    color: white;
+    padding-right: 5%;
+}
+/*===SideNavbar===*/
+.sideNavbar{
+    height: 69%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sideNavbar a {
+    color: white;
+    padding: 3%;    
+    width: 61%;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*===ContentContainer===*/
+.content{
+    width: 78%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+/*===CarouselContainer===*/
+.carousel-container{
+    width: 100%;
+}
+.carousel-container .carousel{
+    width: 100%;
+    height: 100%;
+}
+.carousel-container .carousel .carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+.carousel-container .carousel .carousel-inner .carousel-item{
+    height: 100%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*===Carousel Images===*/
+.carousel-container .carousel .carousel-inner .carousel-item img{
+    height: 100%;
+    width: 100%;
+}
+/*===Carousel Buttons===*/
+.carousel-container .carousel .carousel-control-prev{
+    left: 10%;
+    width: 10%;
+}
+.carousel-container .carousel .carousel-control-next{
+    right: 10%;
+    width: 10%;
+}
+.carousel-container .carousel a:hover{
+    background:black;
+    opacity: .4;
+}
+.test{
+    width: 100%;
+    height: 50%;
+}
