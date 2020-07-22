@@ -1,6 +1,11 @@
 body {
   margin: 0;
 }
+img{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}
 /*===MainContainer===*/
 .principal-container {
   width: 100%;
@@ -68,6 +73,10 @@ body {
 /*===CarouselContainer===*/
 .carousel-container{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 400px;
 }
 .carousel-container .carousel{
     width: 100%;
@@ -82,11 +91,13 @@ body {
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*===Carousel Images===*/
 .carousel-container .carousel .carousel-inner .carousel-item img{
-    height: 100%;
-    width: 100%;
+    width: auto;
 }
 /*===Carousel Buttons===*/
 .carousel-container .carousel .carousel-control-prev{
